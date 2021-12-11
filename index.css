@@ -1,0 +1,22 @@
+.body{
+    background-color: lightskyblue;
+}
+#button{
+    background-color: rgb(33, 33, 92) ;
+    color: white;
+    font-size: 50px;
+    padding: 15px 15px;
+    margin: 20px 20px;
+    border-radius: 10px;
+}
+#text{
+    font-size: 50px;
+    padding: 15px 15px;
+    margin: 20px 20px;
+    border-radius: 10px;
+}
+.bigblock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
