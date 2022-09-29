@@ -1,22 +1,82 @@
-.body{
-    background-color: lightskyblue;
+* {
+    box-sizing: border-box
 }
-#button{
-    background-color: rgb(33, 33, 92) ;
-    color: white;
-    font-size: 50px;
-    padding: 15px 15px;
-    margin: 20px 20px;
-    border-radius: 10px;
+
+:root {
+    --main-color: #fff
 }
-#text{
-    font-size: 50px;
-    padding: 15px 15px;
-    margin: 20px 20px;
-    border-radius: 10px;
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(130deg, #5f0dda, #225bde, #079cba, #079cba, #225bde, #5f0dda);
+    background-size: 1200% 1200%;
+    animation: AnimationName 10s ease-in-out infinite;
+    color: var(--main-color);
 }
-.bigblock{
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 51%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 51%
+    }
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto
+}
+
+.text-center {
+    text-align: center
+}
+
+.mt-4 {
+    margin-top: 4rem
+}
+
+.main-heading {
+    font-size: 3rem
+}
+
+.big-block {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-around
+}
+
+#text {
+    font-size: 2rem;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    outline: none
+}
+
+#button {
+    background-color: rgb(33, 33, 92);
+    color: var(--main-color);
+    font-size: 2rem;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: var(--main-color);
+    cursor: pointer;
+    outline: none
+}
+
+ul {
+    
+    list-style-type: "▶"
+}
+
+li {
+    padding: 6px 10px
 }
