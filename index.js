@@ -2,12 +2,13 @@ let click = true
 
 function add() {
     let input = document.getElementById("text")
-    if (click) {
-        document.getElementById('list').innerHTML = ''
-    }
+    
     if (input.value == "") {
         alert("Input field is empty")
         return
+    }
+    if (click) {
+        document.getElementById('list').innerHTML = ''
     }
     click = false
     let li = document.createElement("li")
