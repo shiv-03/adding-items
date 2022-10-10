@@ -31,5 +31,6 @@ function deleteFun(id) {
 
     if(list.children.length == 0) {
         list.innerHTML= '<li>This is a demo child 1</li>'
+        click = true
     }
 }
